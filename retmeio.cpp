@@ -41,7 +41,7 @@ void destroiLista (Lista* inicio) {
 
 Lista* retornaMeio (Lista* l) {
 	int i = 0;
-	struct Lista* newLista = new Lista;
+	Lista* newLista = new Lista;
 	newLista = l;
 	while(newLista){
 		newLista = newLista->prox;
@@ -51,7 +51,7 @@ Lista* retornaMeio (Lista* l) {
 		i = i/2 + 1;
 	else
 		i = i/2;
-	int j = 0;
+	int j = 1;
 	newLista = l;
 	while(j != i){
 		newLista = newLista->prox;
